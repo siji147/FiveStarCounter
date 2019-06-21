@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace FiveStarCounter
 {
@@ -8,11 +9,13 @@ namespace FiveStarCounter
         public Form1()
         {
             InitializeComponent();
+            //this.Icon = Properties.Resources.FormIcon;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             lblCopyright.Text = $"© {DateTime.Now.Year} Sijibomi Ajayi";
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
